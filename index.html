@@ -17,9 +17,46 @@
 
     <p>به پروژه گوتنبرگ ایران خوش آمدید. اینجا می‌توانید به کتاب‌های فارسی فاقد حق نشر دسترسی رایگان داشته باشید.</p>
 
-        <h2>📚 فهرست کتاب‌ها</h2>
-    <ul>
-        <li>این یک تست است</li>
-    </ul>
+    <h2>📚 فهرست کتاب‌ها</h2>
+    <label for="sortSelect">🔽 مرتب‌سازی بر اساس:</label>
+    <select id="sortSelect" onchange="renderBooks()">
+        <option value="title">نام کتاب</option>
+        <option value="author">نام نویسنده</option>
+    </select>
+
+    <ul id="bookList"></ul>
+
+    <script>
+        let books = [];
+
+        fetch('data/books.json')
+            .then(res => res.json())
+            .then(data => {
+                books = data;
+                renderBooks();
+            });
+
+        function renderBooks() {
+            const list = document.getElementById("bookList");
+            const sortKey = document.getElementById("sortSelect").value;
+
+            const sorted = [...books].sort((a, b) =>
+                a[sortKey].localeCompare(b[sortKey], 'fa')
+            );
+
+            list.innerHTML = "";
+            sorted.forEach(book => {
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    <strong>${book.title}</strong> - ${book.author}
+                    <br>
+                    ${book.formats.scannedpdf ? `| <a href="${book.formats.scannedpdf}">Scanned PDF</a>` : ""}
+                    ${book.formats.pdf ? `| <a href="${book.formats.pdf}">PDF</a>` : ""}
+                    ${book.formats.epub ? `| <a href="${book.formats.epub}">ePub</a>` : ""}
+                `;
+                list.appendChild(li);
+            });
+        }
+    </script>
 </body>
 </html>

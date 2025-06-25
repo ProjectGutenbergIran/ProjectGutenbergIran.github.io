@@ -1,0 +1,28 @@
+[
+  {
+    "title": "شاهنامه",
+    "author": "فردوسی",
+    "year": "۴۰۰ هجری",
+    "formats": {
+      "pdf": "data/shahnameh.pdf",
+      "epub": "data/shahnameh.epub"
+    }
+  },
+  {
+    "title": "گلستان",
+    "author": "سعدی",
+    "year": "۶۵۶ هجری",
+    "formats": {
+      "pdf": "data/golestan.pdf",
+      "epub": "data/golestan.epub"
+    }
+  },
+  {
+    "title": "مثنوی معنوی",
+    "author": "مولوی",
+    "year": "۶۵۰ هجری",
+    "formats": {
+      "pdf": "data/masnavi.pdf"
+    }
+  }
+]
