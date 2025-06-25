@@ -50,9 +50,9 @@
                 li.innerHTML = `
                     <strong>${book.title}</strong> - ${book.author}
                     <br>
-                    ${book.formats.scannedpdf ? `| <a href="${book.formats.scannedpdf}">Scanned PDF</a>` : ""}
-                    ${book.formats.pdf ? `| <a href="${book.formats.pdf}">PDF</a>` : ""}
-                    ${book.formats.epub ? `| <a href="${book.formats.epub}">ePub</a>` : ""}
+                    ${book.formats.scannedpdf ? `[<a href="${book.formats.scannedpdf}">Scanned PDF</a>]` : ""}
+                    ${book.formats.pdf ? `[<a href="${book.formats.pdf}">PDF</a>]` : ""}
+                    ${book.formats.epub ? `[<a href="${book.formats.epub}">ePub</a>]` : ""}
                 `;
                 list.appendChild(li);
             });
