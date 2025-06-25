@@ -1,28 +1,17 @@
 [
   {
-    "title": "شاهنامه",
-    "author": "فردوسی",
-    "year": "۴۰۰ هجری",
+    "title": "کلیات",
+    "author": "ایرج میرزا",
     "formats": {
-      "pdf": "data/shahnameh.pdf",
-      "epub": "data/shahnameh.epub"
+      "scannedpdf": "data/kolliyat00irajuoft-fixed.pdf"
     }
   },
   {
-    "title": "گلستان",
-    "author": "سعدی",
-    "year": "۶۵۶ هجری",
+    "title": "بوف کور",
+    "author": "صادق هدایت",
     "formats": {
-      "pdf": "data/golestan.pdf",
-      "epub": "data/golestan.epub"
-    }
-  },
-  {
-    "title": "مثنوی معنوی",
-    "author": "مولوی",
-    "year": "۶۵۰ هجری",
-    "formats": {
-      "pdf": "data/masnavi.pdf"
+      "pdf": "data/boofe-koor.pdf",
+      "epub": "data/boofe-koor.epub"
     }
   }
 ]
