@@ -13,5 +13,12 @@
       "pdf": "data/boofe-koor.pdf",
       "epub": "data/boofe-koor.epub"
     }
+  },
+  {
+    "title": "گروه محکومین و پیام کافکا",
+    "author": "صادق هدایت، حسن قائمیان",
+    "formats": {
+      "pdf": "data/GorohMahkoumin-PayamKafka.pdf"
+    }
   }
 ]
